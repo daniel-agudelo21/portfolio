@@ -1,0 +1,52 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+    class="w-full grid grid-cols-10 auto-rows-[30rem] gap-4 mx-auto p-2 lg:px-20 lg:pt-10"
+>
+    <BentoItem class="col-span-10 md:col-span-4" title="Youtube clone">
+        <div
+            slot="image"
+            class="hidden md:block absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 -mt-40 bg-center bg-cover bg-no-repeat bg-blend-luminosity -z-10"
+            style="background-image: url('/images/projects/youtubeClone.webp');"
+        >
+        </div>
+        <div
+            slot="image"
+            class="md:hidden absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-50 -mt-40 bg-center bg-cover bg-no-repeat bg-blend-luminosity -z-10"
+            style="background-image: url('/images/projects/youtubeMobile.webp');"
+        >
+        </div>
+        <p slot="content" class="max-w-xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+            praesentium quod aspernatur laboriosam nobis quos deserunt quasi
+            rerum dicta quibusdam illum dignissimos magnam nisi consequuntur
+            cupiditate corrupti, aut illo! Animi.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-6" title="Ferreteria ROFE">
+        <p slot="content" class="max-w-xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+            praesentium quod aspernatur laboriosam nobis quos deserunt quasi
+            rerum dicta quibusdam illum dignissimos magnam nisi consequuntur
+            cupiditate corrupti, aut illo! Animi.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-6" title="Countries">
+        <p slot="content" class="max-w-xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+            praesentium quod aspernatur laboriosam nobis quos deserunt quasi
+            rerum dicta quibusdam illum dignissimos magnam nisi consequuntur
+            cupiditate corrupti, aut illo! Animi.
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-4" title="Rick & Morty">
+        <p slot="content" class="max-w-xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+            praesentium quod aspernatur laboriosam nobis quos deserunt quasi
+            rerum dicta quibusdam illum dignissimos magnam nisi consequuntur
+            cupiditate corrupti, aut illo! Animi.
+        </p>
+    </BentoItem>
+</section>

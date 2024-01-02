@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/onest": "^5.0.2",
     "astro": "^4.0.8",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.3",
