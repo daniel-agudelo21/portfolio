@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/onest';
+import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
 interface Props {
 	title: string;
@@ -17,10 +17,12 @@ const { title, description } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
-		
 	</head>
-	<body >
-		<div class="absolute top-0 z-[-2] min-h-screen w-full dark:bg-neutral-95 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+	<body class="relative text-black dark:text-white">
+		<div
+			class="absolute top-0 z-[-2] min-h-screen w-full dark:bg-neutral-95 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+		>
+		</div>
 		<Header />
 		<slot />
 	</body>
@@ -28,19 +30,15 @@ const { title, description } = Astro.props;
 <style is:global>
 	:root {
 		color-scheme: light dark;
-		
 	}
 	html {
-		font-family:'Onest Variable', system-ui, sans-serif;
+		font-family: "Onest Variable", system-ui, sans-serif;
 		min-height: 100vh;
-
 	}
 	body {
-		margin: 0;
 		display: flex;
 		flex-direction: column;
 		justify-items: center;
 		justify-content: center;
-		
 	}
 </style>

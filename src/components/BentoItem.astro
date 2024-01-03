@@ -2,19 +2,28 @@
 interface Props {
     class?: string;
     title: string;
+    href?: string;
 }
 const { title } = Astro.props;
 ---
 
-<article
+<a
     class={`${Astro.props.class}  relative rounded-xl backdrop-blur-md border border-black/10 shadow-inner shadow-white/10 overflow-hidden group `}
+    href={`${Astro.props.href}`}
+    target="_blank"
 >
-<div class="absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-30% via-white/90 to-white dark:via-black/40 dark:to-black">
-
-</div>
-    <slot name="image" />
-    <div class="relative select-none flex flex-col gap-1 p-6 text-lg z-20 justify-end h-full">
-        <h2 class="text-3xl font-semibold text-balance mb-4">{title}</h2>
-        <slot name="content" />
-    </div>
-</article>
+    <article class="relative justify-end h-full">
+        <div
+            class="absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-30% via-white/90 to-white dark:via-black/40 dark:to-black"
+        >
+        </div>
+        <slot name="image" />
+        <slot name="link" />
+        <div
+            class="relative select-none flex flex-col gap-1 p-6 text-lg z-20 justify-end h-full"
+        >
+            <h2 class="text-3xl font-semibold text-balance mb-4">{title}</h2>
+            <slot name="content" />
+        </div>
+    </article>
+</a>
