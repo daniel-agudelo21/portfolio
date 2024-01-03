@@ -5,6 +5,7 @@ import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import SocialLinks from "../components/SocialLinks.astro";
 import Bento from "../components/Bento.astro";
+import BriefCase from "../components/icons/BriefCase.astro";
 ---
 
 <Layout
@@ -50,8 +51,12 @@ import Bento from "../components/Bento.astro";
 				</SocialLinks>
 			</nav>
 		</section>
-		<section class="flex flex-col justify-center lg:items-center w-full lg:w-[1400px] mx-auto pt-8">
-			<h2 class="font-bold text-2xl">Proyectos</h2>
+		<section class="flex flex-col justify-center lg:items-center w-full lg:w-[1400px] mx-auto pt-24 ">
+			
+			<h2 class="flex gap-2 font-bold text-3xl md:justify-center items-center pb-6">
+				<BriefCase class="size-8"/>
+				Proyectos
+			</h2>
 			<Bento />
 		</section>
 	</main>
