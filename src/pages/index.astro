@@ -8,6 +8,8 @@ import Bento from "../components/Bento.astro";
 import BriefCase from "../components/icons/BriefCase.astro";
 import Technologies from "../components/Technologies.astro";
 import ResumeIcon from "../components/icons/Resume.astro";
+import Projects from "../components/icons/Projects.astro";
+import Education from "../components/Education.astro";
 ---
 
 <Layout
@@ -81,13 +83,17 @@ import ResumeIcon from "../components/icons/Resume.astro";
 				id="proyectos"
 				data-section="proyectos"
 			>
-				<BriefCase class="size-8" />
+				<Projects class="size-8" />
 				Proyectos
 			</h2>
 			<Bento />
 		</section>
 
-		<section>EXPERIENCIA</section>
+		<section class="flex flex-col justify-center lg:items-center w-full 2xl:w-[1400px] mx-auto pt-24">
+			<h2 class="flex gap-2 font-bold text-3xl md:justify-center items-center ">Cualificación</h2>
+			<h3 class="pb-6">Mi viaje personal</h3>
+			<Education/>
+		</section>
 	</main>
 	<footer class="py-20 flex justify-center">EL FOOTER</footer>
 </Layout>

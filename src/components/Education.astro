@@ -1,0 +1,138 @@
+---
+import BriefCase from "./icons/BriefCase.astro";
+import Calender from "./icons/Calender.astro";
+import School from "./icons/School.astro";
+---
+
+<div class="[container]">
+    <div class="flex justify-evenly mb-4">
+        <div
+            class="flex justify-items-center gap-2 cursor-pointer hover:text-red-400"
+        >
+            <School class="size-6" />
+            <h2 class="">Educación</h2>
+        </div>
+        <div
+            class="flex justify-items-center gap-2 cursor-pointer hover:text-red-400"
+        >
+            <BriefCase class="size-6" />
+            <h2 class="">Trabajo</h2>
+        </div>
+    </div>
+
+    <div class=" mb-10">
+        <div class="[content]">
+            <div class="data">
+                <div>
+                    <h3>Desarrollo web FullStack</h3>
+                    <span>Remoto - Henry</span>
+                    <div>
+                        <Calender />
+                        2023 - 2023
+                    </div>
+                </div>
+
+                <div>
+                    <span class="redondo"></span>
+                    <span class="linea"></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div></div>
+
+                <div>
+                    <span class="redondo"></span>
+                    <span class="linea"></span>
+                </div>
+
+                <div>
+                    <h3>Diplomado con énfasis en desarrollo web</h3>
+                    <span>Colombia - Universidad del Norte</span>
+                    <div>
+                        <Calender />
+                        2022 - 2022
+                    </div>
+                </div>
+            </div>
+
+            <div class="data">
+                <div>
+                    <h3>Tecnología en desarrollo de software</h3>
+                    <span>Colombia - Sena</span>
+                    <div>
+                        <Calender />
+                        2020 - 2022
+                    </div>
+                </div>
+
+                <div>
+                    <span class="redondo"></span>
+                    <span class="linea"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="[content]">
+            <div class="data">
+                <div>
+                    <h3>Desarrollo Analista Junior</h3>
+                    <span>Botero S.A.S</span>
+                    <div>
+                        <Calender />
+                        2023 - 2024
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="redondo"></span>
+                    <span class="linea"></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div></div>
+
+                <div>
+                    <span class="redondo"></span>
+                    <span class="linea"></span>
+                </div>
+
+                <div>
+                    <h3>Teaching Assistant</h3>
+                    <span>Soy Henry</span>
+                    <div>
+                        <Calender />
+                        2023 - 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .data {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5rem;
+    }
+
+    .linea {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: #da2727;
+        transform: translate(6px, -7px);
+    }
+
+    .redondo {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: #da2727;
+        border-radius: 50%;
+    }
+</style>
